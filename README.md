@@ -1,4 +1,4 @@
-# IP定位 - Chrome 浏览器扩展
+# IP定位 - Chrome 浏览器扩展 | [English](#english)
 
 > 🔄 **二次开发项目** - 基于 F-Droid 大佬的原项目进行二次开发，感谢原作者的贡献！
 >
@@ -54,5 +54,67 @@
 - 邮箱: [IPGeolocation@daisheng.xyz](mailto:IPGeolocation@daisheng.xyz)
 
 ## 许可证
+
+MIT License
+
+---
+
+<a name="english"></a>
+# IP Geolocation - Chrome Extension | [中文](#ip定位---chrome-浏览器扩展--english)
+
+> 🔄 **Secondary Development Project** - Based on F-Droid's original project. Thanks to the original author!
+>
+> This project automatically updates IP location based on proxy, enhancing disguise capabilities for certain websites.
+
+Automatically update browser GPS location based on IP location.
+
+## Screenshots
+
+| Main Interface | Manual Settings |
+|:---:|:---:|
+| ![Main Interface](screenshots/main.png) | ![Manual Settings](screenshots/manual.png) |
+
+## Features
+
+- 🌍 **Auto Location**: Automatically get geolocation based on IP address
+- 📍 **Manual Settings**: Support manual input of coordinates or click on map to select location
+- 🔒 **Website Filter**: Support whitelist and blacklist for flexible control
+- 🗺️ **Map Preview**: Built-in map to display current location
+- 🔄 **Auto Update**: Automatically update location periodically
+
+## Installation
+
+1. Download all files from this project
+2. Open Chrome browser, go to `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked"
+5. Select this project folder
+
+## Usage
+
+### Auto Mode
+The extension will automatically get geolocation based on your IP address and apply it to the browser's geolocation API.
+
+### Manual Mode
+1. Click the extension icon to open popup
+2. Switch to "Manual Settings" tab
+3. Select "Manual Settings" mode
+4. Enter coordinates or click on map to select location
+5. Click "Apply this location"
+
+### Website Filter
+- **Whitelist**: Added websites will NOT use the spoofed location
+- **Blacklist**: Only added websites will use the spoofed location (higher priority than whitelist)
+
+## Privacy Notice
+
+When IP is detected in mainland China, a default location (Beijing) will be used instead of the real location for privacy protection.
+
+## Author
+
+- GitHub: [https://github.com/1776686596](https://github.com/1776686596)
+- Email: [IPGeolocation@daisheng.xyz](mailto:IPGeolocation@daisheng.xyz)
+
+## License
 
 MIT License
